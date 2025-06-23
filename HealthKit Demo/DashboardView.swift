@@ -9,9 +9,6 @@ import Foundation
 import SwiftUI
 import Charts
 
-import SwiftUI
-import Charts
-
 struct DashboardView: View {
     @EnvironmentObject var healthKitManager: HealthKitManager
 
@@ -95,7 +92,7 @@ struct VisionCard<Content: View>: View {
         .scaleEffect(isHovered ? 1.04 : 1)
         .animation(.spring(response: 0.4, dampingFraction: 0.7), value: isHovered)
         .onHover { hovering in
-            isHovered = hovering
+            isHovered = hovering //test only
         }
     }
 }
